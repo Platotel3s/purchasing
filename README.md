@@ -1,66 +1,171 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<h1 align="center">📦 Aplikasi Purchasing Barang</h1><p align="center"> <strong>Aplikasi Purchasing Barang</strong> adalah sebuah sistem manajemen pergudangan berbasis web yang dirancang untuk memudahkan pengelolaan inventaris barang, pemantauan pemasukkan, dan pengeluaran barang. Aplikasi ini memiliki tiga role utama: <strong>Admin</strong>, <strong>Buyer</strong>, dan <strong>Purchaser</strong>, masing-masing dengan akses dan fitur yang berbeda. 🚀 </p>
+🎯 Tujuan Aplikasi
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi ini bertujuan untuk:
 
-## About Laravel
+    🏭 Memudahkan pengelolaan inventaris barang di pergudangan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+    📊 Memantau pemasukkan dan pengeluaran barang secara real-time.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+    🔒 Membatasi akses pengguna berdasarkan role untuk menjaga keamanan data.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+    ⏱ Meningkatkan efisiensi proses pembelian dan pengambilan barang.
 
-## Learning Laravel
+🌟 Fitur Utama
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Aplikasi ini memiliki tiga role dengan akses dan fitur yang berbeda:
+1. 👨‍💼 Admin
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+    🛠️ Manipulasi Data Barang: Menambah, mengedit, dan menghapus data barang.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+    📋 Manajemen Pengguna: Menambah, mengedit, dan menghapus akun pengguna (buyer dan purchaser).
 
-## Laravel Sponsors
+    📊 Laporan Stok: Melihat laporan stok barang, pemasukkan, dan pengeluaran.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+    🔐 Hak Akses Penuh: Dapat mengakses semua fitur dan data.
 
-### Premium Partners
+2. 🛒 Buyer
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    ➕ Memasukkan Data Barang: Menambahkan data barang yang masuk ke gudang.
 
-## Contributing
+    📝 Mengupdate Stok: Memperbarui stok barang yang tersedia.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    🔍 Melihat Data Barang: Melihat daftar barang yang tersedia di gudang.
 
-## Code of Conduct
+3. 🚚 Purchaser
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    📦 Mengambil Barang: Mengambil barang dari gudang berdasarkan permintaan.
 
-## Security Vulnerabilities
+    📄 Mencatat Pengeluaran: Mencatat barang yang keluar dari gudang.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    🔍 Melihat Stok Barang: Melihat stok barang yang tersedia.
 
-## License
+🛠️ Teknologi yang Digunakan
+Backend
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    🐘 Laravel: Framework PHP untuk pengembangan backend.
+
+    🗃️ MySQL: Database untuk menyimpan data barang, pengguna, dan transaksi.
+
+    🔗 API: Untuk integrasi antara frontend dan backend.
+
+Frontend
+
+    🎨 TailwindCSS: Framework CSS untuk tampilan yang responsif.
+
+    🎨 Box Icons: Icon web gratis untuk tampilan yang menarik.
+
+    🖥️ JavaScript: Untuk interaktivitas di frontend.
+
+    📊 Chart.js: Library untuk visualisasi data (grafik stok, pemasukkan, dan pengeluaran).
+
+Lainnya
+
+    🐙 Git: Untuk version control.
+
+    🐳 Docker: Untuk containerization dan deployment.
+
+    📤 Postman: Untuk testing API.
+
+🚀 Cara Penggunaan
+1. Instalasi
+
+    Clone repository ini:
+
+        git clone https://github.com/Platotel3s/purchasing-lvl-2.git
+
+    Install dependencies:
+
+        composer install
+        npm install
+
+    Buat file .env dan sesuaikan konfigurasi database:
+
+        DB_DATABASE=nama_database
+        DB_USERNAME=username
+        DB_PASSWORD=password
+
+    Jalankan migrasi dan seeder:
+
+        php artisan migrate --seed
+
+    Jalankan aplikasi:
+   
+        php artisan serve
+
+3. Login
+
+    🌐 Buka aplikasi di browser.
+
+    🔑 Login menggunakan akun yang telah terdaftar (admin, buyer, atau purchaser).
+
+4. Penggunaan Berdasarkan Role
+
+    👨‍💼 Admin: Kelola data barang, pengguna, dan lihat laporan.
+
+    🛒 Buyer: Tambahkan dan perbarui data barang.
+
+    🚚 Purchaser: Ambil barang dan catat pengeluaran.
+
+🌟 Manfaat dan Kelebihan
+Manfaat
+
+    Bagi Admin:
+
+        🛠️ Memudahkan pengelolaan data barang dan pengguna.
+
+        📊 Memantau stok barang secara real-time.
+
+    Bagi Buyer:
+
+        ➕ Memudahkan proses pencatatan barang masuk.
+
+        🔍 Melihat stok barang dengan cepat.
+
+    Bagi Purchaser:
+
+        📦 Memudahkan proses pengambilan barang.
+
+        📄 Mencatat pengeluaran barang dengan akurat.
+
+Kelebihan
+
+    🔒 Akses Terkontrol: Setiap role memiliki akses yang terbatas sesuai kebutuhan.
+
+    📊 Laporan Real-Time: Laporan stok, pemasukkan, dan pengeluaran dapat diakses kapan saja.
+
+    🖼️ User-Friendly: Antarmuka yang mudah digunakan.
+
+    🌐 Multi-Platform: Bisa diakses melalui web.
+
+🤝 Kontribusi
+
+Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
+
+Fork repository ini.
+
+Buat branch baru:
+
+        git checkout -b fitur-baru
+
+Commit perubahan Anda:
+
+    git commit -m "Menambahkan fitur baru"
+
+Push ke branch:
+
+    git push origin fitur-baru
+    
+
+📜 Lisensi
+
+Proyek ini dilisensikan di bawah MIT License.
+👨‍💻 Tim Pengembang : <br>
+
+    Syaiful Yudha Platoteles :
+        - 🚀 Project Lead 
+        - 🖥️ Fullstack Developer
+
+    
+
+Dengan Aplikasi Purchasing Barang, kami berharap dapat memberikan solusi digital yang memudahkan pengelolaan pergudangan dan meningkatkan efisiensi operasional. Terima kasih telah menggunakan aplikasi ini! 😊
